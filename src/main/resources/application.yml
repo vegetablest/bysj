@@ -1,0 +1,110 @@
+spring:
+  #开发时关闭页面缓存,不然无法看到实时页面
+  thymeleaf:
+    cache: false
+
+  #配置Druid数据源
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://47.105.208.63:3306/graduationproject
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    platform: mysql
+    druid:
+      initial-size: 5  # 初始化大小
+      min-idle: 5  # 最小
+      max-active: 100  # 最大
+      max-wait: 60000  # 连接超时时间
+      time-between-eviction-runs-millis: 60000  # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      min-evictable-idle-time-millis: 300000  # 指定一个空闲连接最少空闲多久后可被清除，单位是毫秒
+      validationQuery: SELECT 'x'
+      test-while-idle: true  # 当连接空闲时，是否执行连接测试
+      test-on-borrow: false  # 当从连接池借用连接时，是否测试该连接
+      test-on-return: false  # 在连接归还到连接池时是否测试该连接
+      filters: config,wall,stat  # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      maxOpenPreparedStatements: 20
+      connectionProperties: druid.stat.slowSqlMillis=200;druid.stat.logSlowSql=true;config.decrypt=true
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: /druid/*,*.js,*.gif,*.jpg,*.bmp,*.png,*.css,*.ico
+        session-stat-enable: true
+        session-stat-max-count: 10
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        reset-enable: true
+        login-username: admin
+        login-password: 123
+
+#MyBatis配置
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml #核心配置文件
+  mapper-locations: classpath:mybatis/mapper/*.xml   #配置Mapper.xml文件所在路径
+  type-aliases-package: com.graduationproject.suaofeng.entities   #配置别名
+
+#日志配置
+logging:
+  config: classpath:log/logback-spring.xml
+#spring:
+#  #禁用模板引擎
+#  thymeleaf:
+#    cache: false
+#  #修改日期格式化方式
+#  mvc:
+#    date-format: yyyy-MM-dd
+#  datasource:
+#    druid:
+#      #spring某个版本之后需要加上这句，否则不会自动执行sql文件
+#      #initialization-mode: always
+#      username: root
+#      password: 123456
+#      driver-class-name: com.mysql.jdbc.Driver
+#      #?useUnicode=true&characterEncoding=utf8&useSSL=false
+#      url: jdbc:mysql://47.105.208.63:3306/graduationproject
+#      #druid数据源
+#      type: com.alibaba.druid.pool.DruidDataSource
+#      platform: mysql
+#      #下面这些在spring boot的datasource配置类中没有，因此要自己写配置类导入
+#      #@configuration@bean@configuratinproperties(prefix="")
+#      # 初始化大小，最小，最大
+#      initialSize: 5
+#      minIdle: 3
+#      maxActive: 20
+#      # 配置获取连接等待超时的时间
+#      maxWait: 60000
+#      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+#      timeBetweenEvictionRunsMillis: 60000
+#      # 配置一个连接在池中最小生存的时间，单位是毫秒
+#      minEvictableIdleTimeMillis: 30000
+#      validationQuery: select 'x'
+#      #空闲时是否进行连接测试
+#      testWhileIdle: true
+#      #从连接池借用连接时是否测试该连接
+#      testOnBorrow: false
+#      #归还时是否测试连接
+#      testOnReturn: false
+#      # 打开PSCache，并且指定每个连接上PSCache的大小
+#      poolPreparedStatements: true
+#      maxPoolPreparedStatementPerConnectionSize: 20
+#      #配置监控拦截的过滤器
+#      filters: stat,wall,slf4j
+#      #  通过connectProperties属性来打开mergeSql功能；慢SQL记录
+#      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+# #    schema:
+# #      - classpath: sql/department.sql
+# #      - classpath: sql/employee.sql
+#mybatis:
+#  config-location: classpath:mybatis/mybatis-config.xml
+#  mapper-locations: classpath:mybatis/mapper/*.xml
+#  type-aliases-package: com.graduationproject.suaofeng.entities
+#
+##端口
+#server:
+#  port: 8080
+#  #访问路径
+#  servlet:
+#    context-path: /graduationproject

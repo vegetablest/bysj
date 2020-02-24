@@ -1,0 +1,8 @@
+2020-02-19.09:36:10 [DEBUG] c.g.suaofeng.SuaofengApplicationTests  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-19.09:36:19 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUsers 159 debug ==>  Preparing: select * from bysj_user 
+2020-02-19.09:36:19 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUsers 159 debug ==> Parameters: 
+2020-02-19.09:36:19 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUsers 159 debug <==      Total: 1
+2020-02-19.09:39:28 [DEBUG] c.g.suaofeng.SuaofengApplicationTests  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-19.09:39:34 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUsers 159 debug ==>  Preparing: select * from bysj_user 
+2020-02-19.09:39:34 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUsers 159 debug ==> Parameters: 
+2020-02-19.09:39:34 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUsers 159 debug <==      Total: 1
