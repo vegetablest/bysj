@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Kodinger" >
+	<title>修改密码 &mdash;毕业设计</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" th:href="@{/static/bootstrap/css/bootstrap.min.css}">
+	<link rel="stylesheet" type="text/css" href="css/my-login.css" th:href="@{/static/css/my-login.css}">
+	<link rel="icon" href="./favicon.ico" th:href="@{/static/favicon.ico}"  type="image/x-icon" />
+</head>
+
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center align-items-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+						<img src="img/logo.jpg" th:src="@{/static/img/logo.jpg}">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">修改密码</h4>
+							<form method="POST">
+
+								<div class="form-group">
+									<label for="new-password">新密码</label>
+									<input id="new-password" type="password" class="form-control" name="password"
+										required autofocus data-eye>
+									<div class="form-text text-muted">
+										请确保您的密码安全且易记！
+									</div>
+								</div>
+
+								<div class="form-group no-margin">
+									<button type="submit" class="btn btn-primary btn-block">
+										修改密码
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="footer">
+						苏傲枫 @ 毕业设计
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js" th:src="@{/static/js/jquery.min.js}"></script>
+	<script src="bootstrap/js/bootstrap.min.js" th:src="@{/static/bootstrap/js/bootstrap.min.js}"></script>
+	<script src="js/my-login.js" th:src="@{/static/js/my-login.js}"></script>
+</body>
+
+</html>

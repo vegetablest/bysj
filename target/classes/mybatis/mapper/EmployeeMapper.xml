@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.graduationproject.suaofeng.mapper.EmployeeMapper">
+
+    <select id="getEmployeeByEmail" resultType="Employee" parameterType="String" >
+         select * from employee where email=#{email}
+    </select>
+    <select id="getEmployeeByName" resultType="Employee" parameterType="String" >
+         select departmentid,eid from employee where ename=#{ename}
+    </select>
+    <select id="getEmployeeByUid" resultType="Employee" parameterType="Integer" >
+         select * from employee where uid=#{uid}
+    </select>
+    <select id="getEmployeeByDid" resultType="Employee" parameterType="Integer" >
+         select eid,ename,email,phone,intime from employee where departmentid=#{did}
+    </select>
+    <select id="getEmployeeByEid" resultType="Employee" parameterType="Integer" >
+         select * from employee where eid=#{eid}
+    </select>
+    <select id="getLikeEmployeeByName" resultType="Employee" parameterType="String" >
+         select * from employee where ename like concat('%',#{ename},'%')
+    </select>
+    <select id="getEmployees" resultType="Employee"  >
+         select * from employee
+    </select>
+    <delete id="delById" parameterType="Integer">
+        delete from employee where  eid=#{eid}
+    </delete>
+    <insert id="addEmp" parameterType="Employee" >
+        insert  into employee(ename,eage,email,phone,salary,departmentid) values(#{ename},#{eage},#{email},#{phone},#{salary},#{departmentid})
+    </insert>
+    <update id="updateEmp" parameterType="Employee" >
+        update employee
+        <trim prefix="set" suffixOverrides=",">
+            <if test="ename != null" >
+                ename = #{ename},
+            </if>
+            <if test="email != null" >
+                email = #{email},
+            </if>
+            <if test="phone != null" >
+                phone = #{phone},
+            </if>
+            <if test="departmentid != null" >
+                departmentid = #{departmentid},
+            </if>
+        </trim>
+        where eid = #{eid}
+    </update>
+    <update id="setAvatar" parameterType="Employee" >
+        update employee
+        <trim prefix="set" suffixOverrides=",">
+            <if test="avatar != null" >
+                avatar = #{avatar},
+            </if>
+        </trim>
+        where eid = #{eid}
+    </update>
+</mapper>

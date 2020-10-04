@@ -6,9 +6,19 @@
     <select id="getUsers" resultType="User" >
          select * from bysj_user
     </select>
+    <select id="getUser" resultType="User" parameterType="String">
+         select * from bysj_user where username=#{param1} and password=#{param2}
+    </select>
+    <select id="getUserByName" resultType="User" parameterType="String" >
+         select * from bysj_user where username=#{username}
+    </select>
+    <select id="getEmployeeByEmail" resultType="Employee" parameterType="String" >
+         select * from employee where email=#{email}
+    </select>
+    <insert id="addUser" parameterType="User">
+        insert into bysj_user(username,password) values(#{username},#{password})
+    </insert>
     <insert id="insertUser" parameterType="User">
-
         insert into bysj_user(id,email,gender,d_id) values(#{lastName},#{email},#{gender},#{dId})
-
     </insert>
 </mapper>

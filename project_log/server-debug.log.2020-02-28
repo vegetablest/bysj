@@ -1,0 +1,197 @@
+2020-02-28.10:09:31 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.10:10:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.10:10:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.10:10:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.10:10:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.10:10:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.10:10:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.10:11:25 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.10:11:25 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 周七(String)
+2020-02-28.10:11:25 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 0
+2020-02-28.10:11:25 [DEBUG] c.g.suaofeng.mapper.UserMapper.addUser 159 debug ==>  Preparing: insert into bysj_user(username,password) values(?,?) 
+2020-02-28.10:11:25 [DEBUG] c.g.suaofeng.mapper.UserMapper.addUser 159 debug ==> Parameters: 周七(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.10:11:25 [DEBUG] c.g.suaofeng.mapper.UserMapper.addUser 159 debug <==    Updates: 1
+2020-02-28.10:13:15 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.10:16:13 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.10:19:25 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.10:23:07 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.10:24:34 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.10:24:53 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.10:24:53 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.10:24:53 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.10:24:53 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.10:24:53 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), c20ad4d76fe97759aa27a0c99bff6710(String)
+2020-02-28.10:24:53 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 0
+2020-02-28.10:28:38 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.10:32:37 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.10:33:33 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.10:34:43 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.10:36:02 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.10:48:06 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.10:49:34 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.11:02:49 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.11:03:17 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.11:03:18 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.11:03:18 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.11:03:47 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEmail 159 debug ==>  Preparing: select * from employee where email=? 
+2020-02-28.11:03:47 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEmail 159 debug ==> Parameters: 123456789@163.com(String)
+2020-02-28.11:03:47 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEmail 159 debug <==      Total: 1
+2020-02-28.11:06:27 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.11:06:54 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEmail 159 debug ==>  Preparing: select * from employee where email=? 
+2020-02-28.11:06:54 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEmail 159 debug ==> Parameters: 123456789@163.com(String)
+2020-02-28.11:06:54 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEmail 159 debug <==      Total: 1
+2020-02-28.11:07:04 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.11:07:04 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.11:07:04 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.11:08:21 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.11:11:06 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.13:57:47 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.13:58:21 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.13:58:21 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.13:58:21 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.13:58:21 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.13:58:21 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.13:58:21 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.13:59:47 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.14:00:08 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.14:00:08 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.14:00:08 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.14:00:08 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.14:00:08 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.14:00:08 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.14:03:54 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.14:04:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.14:04:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.14:04:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.14:04:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.14:04:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.14:04:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.14:09:32 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.16:53:10 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.16:53:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.16:53:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.16:53:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.16:53:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.16:53:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.16:53:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.16:57:17 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.16:57:35 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.16:57:35 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.16:57:35 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.16:57:35 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.16:57:35 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.16:57:35 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.17:00:20 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.17:00:44 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.17:00:44 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.17:00:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.17:00:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.17:00:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.17:00:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.17:13:04 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.17:13:30 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.17:13:30 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.17:13:30 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.17:13:30 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.17:13:30 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.17:13:30 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.17:24:39 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.17:25:00 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.17:25:00 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.17:25:00 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.17:25:00 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.17:25:00 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.17:25:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.17:27:09 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.17:28:29 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.17:29:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.17:29:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.17:29:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.17:29:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.17:29:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.17:29:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.17:58:18 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.17:58:35 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.17:58:35 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.17:58:36 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.17:58:36 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.17:58:36 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.17:58:36 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.18:01:40 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.18:01:40 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.18:01:40 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.18:01:40 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.18:01:40 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.18:01:40 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.18:42:11 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.18:42:11 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.18:42:11 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.18:42:11 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.18:42:11 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.18:42:11 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.18:55:47 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.18:56:02 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.18:56:02 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.18:56:02 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.18:56:02 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.18:56:02 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.18:56:02 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.19:07:19 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.19:07:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.19:07:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.19:07:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.19:07:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.19:07:37 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.19:07:38 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.19:12:36 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.19:13:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.19:13:02 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.19:13:02 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.19:13:02 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.19:13:02 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.19:13:02 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.19:15:14 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.19:15:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.19:15:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.19:15:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.19:15:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.19:15:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.19:15:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.19:16:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.19:16:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.19:16:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.19:16:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.19:16:59 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.19:17:00 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.19:23:26 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.19:23:49 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.19:23:49 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-02-28.19:23:49 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.19:23:49 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.19:23:49 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.19:23:49 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.19:25:19 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-28.19:29:47 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.19:29:47 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 王五(String)
+2020-02-28.19:29:47 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.19:29:47 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.19:29:47 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 王五(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.19:29:47 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-02-28.19:30:58 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.19:30:58 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 王五(String)
+2020-02-28.19:30:58 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.19:30:58 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.19:30:58 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 王五(String), 827ccb0eea8a706c4c34a16891f84e7b(String)
+2020-02-28.19:30:58 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 0
+2020-02-28.19:37:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEmail 159 debug ==>  Preparing: select * from employee where email=? 
+2020-02-28.19:37:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEmail 159 debug ==> Parameters: 123456789@163.com(String)
+2020-02-28.19:37:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEmail 159 debug <==      Total: 1
+2020-02-28.19:37:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEmail 159 debug ==>  Preparing: select * from employee where email=? 
+2020-02-28.19:37:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEmail 159 debug ==> Parameters: 123456789@163.com(String)
+2020-02-28.19:37:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEmail 159 debug <==      Total: 1
+2020-02-28.19:42:11 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-02-28.19:42:11 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 王五(String)
+2020-02-28.19:42:11 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-02-28.19:42:11 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-02-28.19:42:11 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 王五(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-02-28.19:42:11 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1

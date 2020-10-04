@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- html5布局 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- 图标 -->
+    <link rel="icon" href="./favicon.ico" th:href="@{/static/favicon.ico}"  type="image/x-icon" />
+    <title>部门管理-部门添加</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="./css/mybootstrap.min.css" th:href="@{/static/css/mybootstrap.min.css}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/mystyle.css" th:href="@{/static/css/mystyle.css}" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/default-dark.css" th:href="@{/static/css/default-dark.css}" id="theme" rel="stylesheet">
+
+</head>
+
+<body class="fix-header card-no-border fix-sidebar">
+<!-- Preloader - style you can find in spinners.css -->
+<div class="preloader">
+    <div class="loader">
+        <div class="loader__figure"></div>
+        <p class="loader__label">Admin Pro</p>
+    </div>
+</div>
+<!-- Main wrapper - style you can find in pages.scss -->
+<div id="main-wrapper">
+    <!-- 头部复用 -->
+    <div th:insert="~{home::topbar01}"></div>
+    <!-- 左侧任务栏复用  -->
+    <aside class="left-sidebar">
+        <div th:insert="~{home::leftbar01}"></div>
+    </aside>
+    <div class="page-wrapper">
+        <!-- Container fluid  -->
+        <div class="container-fluid">
+            <!-- Bread crumb and right sidebar toggle -->
+            <div class="row page-titles">
+                <div class="col-md-5 align-self-center">
+                    <h3 class="text-themecolor">添加部门</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- 公司logo -->
+                <div class="col-lg-4 col-xlg-3 col-md-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <center class="m-t-30"> <img src="../assets/images/users/5.jpg" class="img-circle"
+                                                         width="150"  th:src="@{/static/img/zzz.jpg}"/>
+                                <h4 class="card-title m-t-10">XX公司员工管理系统</h4>
+                                <h6 class="card-subtitle">部门管理</h6>
+
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column -->
+                <div class="col-lg-8 col-xlg-9 col-md-7">
+                    <form method="post" href="/dep/adddep" th:action="@{/dep/adddep}" >
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="form-horizontal form-material">
+                                <!--部门id-->
+                                <div class="form-group">
+                                    <label class="col-md-12">部门编号</label>
+                                    <p style="color: red" th:text="${session.messages}" th:if="${not #strings.isEmpty(session.messages)}"/>
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="请输入部门名称~" name="did"
+                                               class="form-control form-control-line">
+                                    </div>
+                                </div>
+                                <!--部门名称-->
+                                <div class="form-group">
+                                    <label for="example-email" class="col-md-12">部门名称</label>
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="请输入部门名称~"
+                                               class="form-control form-control-line" name="dname"
+                                               id="example-email">
+                                    </div>
+                                </div>
+                                <!--部门组长-->
+                                <div class="form-group">
+                                    <label class="col-sm-12">选择部门组长</label>
+                                    <div class="col-sm-12">
+                                        <select class="form-control form-control-line" placeholder="请选择部门组长姓名~" name="supervisorname">
+                                            <option th:each="employee:${employees}"  th:value="${employee.ename}" th:text="${employee.ename}"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="btn btn-success">添加部门</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Row -->
+        </div>
+        <!-- footer -->
+        <footer class="footer"> 苏傲枫@毕业设计 </footer>
+        <!-- End footer -->
+    </div>
+    <!-- End Page wrapper  -->
+</div>
+<!-- End Wrapper -->
+<!-- All Jquery -->
+<script src="jquery/myjquery.min.js" th:src="@{/static/jquery/myjquery.min.js}"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="js/mypopper.min.js" th:src="@{/static/js/mypoper.min.js}"></script>
+<script src="js/mybootstrap.min.js" th:src="@{/static/js/mybootstrap.min.js}"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="js/perfect-scrollbar.jquery.min.js" th:src="@{/static/js/perfect-scrollbar.jquery.min.js}"></script>
+<!--Wave Effects -->
+<script src="js/waves.js" th:src="@{/static/js/waves.js}"></script>
+<!--Menu sidebar -->
+<script src="js/sidebarmenu.js" th:src="@{/static/js/sidebarmenu.js}"></script>
+<!--Custom JavaScript -->
+<script src="js/custom.min.js" th:src="@{/static/js/custom.min.js}"></script>
+</body>
+
+</html>

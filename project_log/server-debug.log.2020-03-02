@@ -1,0 +1,300 @@
+2020-03-02.10:13:58 [DEBUG] c.g.suaofeng.SuaofengApplicationTests  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-02.10:14:03 [DEBUG] c.g.suaofeng.mapper.UserMapper.addUser 159 debug ==>  Preparing: insert into bysj_user(username,password) values(?,?) 
+2020-03-02.10:14:03 [DEBUG] c.g.suaofeng.mapper.UserMapper.addUser 159 debug ==> Parameters: 李四(String), 123456(String)
+2020-03-02.10:14:03 [DEBUG] c.g.suaofeng.mapper.UserMapper.addUser 159 debug <==    Updates: 1
+2020-03-02.10:14:03 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-03-02.10:14:03 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-03-02.10:14:03 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-03-02.10:14:03 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-03-02.10:14:03 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-03-02.10:14:03 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-03-02.10:14:03 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUsers 159 debug ==>  Preparing: select * from bysj_user 
+2020-03-02.10:14:03 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUsers 159 debug ==> Parameters: 
+2020-03-02.10:14:04 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUsers 159 debug <==      Total: 19
+2020-03-02.11:12:40 [DEBUG] c.g.suaofeng.SuaofengApplicationTests  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-02.11:12:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.addUser 159 debug ==>  Preparing: insert into bysj_user(username,password) values(?,?) 
+2020-03-02.11:12:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.addUser 159 debug ==> Parameters: 李四(String), 123456(String)
+2020-03-02.11:12:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.addUser 159 debug <==    Updates: 1
+2020-03-02.11:12:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-03-02.11:12:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 张三(String)
+2020-03-02.11:12:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-03-02.11:12:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-03-02.11:12:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 张三(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-03-02.11:12:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-03-02.11:12:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUsers 159 debug ==>  Preparing: select * from bysj_user 
+2020-03-02.11:12:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUsers 159 debug ==> Parameters: 
+2020-03-02.11:12:45 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUsers 159 debug <==      Total: 21
+2020-03-02.14:16:56 [DEBUG] com.graduationproject.suaofeng.SuaofengApplication  56 logStarting Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-02.14:34:47 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-03-02.14:34:47 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 鐜嬩簲(String)
+2020-03-02.14:34:47 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-03-02.14:34:47 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-03-02.14:34:47 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 鐜嬩簲(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-03-02.14:34:47 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-03-02.14:34:47 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug ==>  Preparing: select * from employee where uid=? 
+2020-03-02.14:34:47 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug ==> Parameters: 1004(Integer)
+2020-03-02.14:34:47 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug <==      Total: 1
+2020-03-02.14:34:59 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==>  Preparing: select * from department 
+2020-03-02.14:34:59 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==> Parameters: 
+2020-03-02.14:34:59 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug <==      Total: 11
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1002(Integer)
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1001(Integer)
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1010(Integer)
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1011(Integer)
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1012(Integer)
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1013(Integer)
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1014(Integer)
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1015(Integer)
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1016(Integer)
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1003(Integer)
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1005(Integer)
+2020-03-02.14:34:59 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:37:23 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==>  Preparing: select * from department 
+2020-03-02.14:37:23 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==> Parameters: 
+2020-03-02.14:37:23 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug <==      Total: 11
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1002(Integer)
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1001(Integer)
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1010(Integer)
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1011(Integer)
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1012(Integer)
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1013(Integer)
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1014(Integer)
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1015(Integer)
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1016(Integer)
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1003(Integer)
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1005(Integer)
+2020-03-02.14:37:23 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:25 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-03-02.14:45:25 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 寮犱笁(String)
+2020-03-02.14:45:25 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-03-02.14:45:25 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-03-02.14:45:25 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 寮犱笁(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-03-02.14:45:25 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-03-02.14:45:25 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug ==>  Preparing: select * from employee where uid=? 
+2020-03-02.14:45:25 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug ==> Parameters: 1001(Integer)
+2020-03-02.14:45:25 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug <==      Total: 1
+2020-03-02.14:45:27 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==>  Preparing: select * from department 
+2020-03-02.14:45:27 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==> Parameters: 
+2020-03-02.14:45:27 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug <==      Total: 11
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1002(Integer)
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1001(Integer)
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1010(Integer)
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1011(Integer)
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1012(Integer)
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1013(Integer)
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1014(Integer)
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1015(Integer)
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1016(Integer)
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1003(Integer)
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1005(Integer)
+2020-03-02.14:45:27 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:39 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==>  Preparing: select * from department 
+2020-03-02.14:45:39 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==> Parameters: 
+2020-03-02.14:45:39 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug <==      Total: 11
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1002(Integer)
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1001(Integer)
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1010(Integer)
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1011(Integer)
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1012(Integer)
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1013(Integer)
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1014(Integer)
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1015(Integer)
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1016(Integer)
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1003(Integer)
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1005(Integer)
+2020-03-02.14:45:39 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:46:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-03-02.14:46:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 寮犱笁(String)
+2020-03-02.14:46:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-03-02.14:46:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-03-02.14:46:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 寮犱笁(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-03-02.14:46:01 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-03-02.14:46:01 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug ==>  Preparing: select * from employee where uid=? 
+2020-03-02.14:46:01 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug ==> Parameters: 1001(Integer)
+2020-03-02.14:46:01 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug <==      Total: 1
+2020-03-02.14:46:03 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==>  Preparing: select * from department 
+2020-03-02.14:46:03 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==> Parameters: 
+2020-03-02.14:46:03 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug <==      Total: 11
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1002(Integer)
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1001(Integer)
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1010(Integer)
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1011(Integer)
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1012(Integer)
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1013(Integer)
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1014(Integer)
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1015(Integer)
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1016(Integer)
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1003(Integer)
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1005(Integer)
+2020-03-02.14:46:03 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:49:48 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-03-02.14:49:48 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 鐜嬩簲(String)
+2020-03-02.14:49:48 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-03-02.14:49:48 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==>  Preparing: select * from bysj_user where username=? and password=? 
+2020-03-02.14:49:48 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug ==> Parameters: 鐜嬩簲(String), e10adc3949ba59abbe56e057f20f883e(String)
+2020-03-02.14:49:48 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUser 159 debug <==      Total: 1
+2020-03-02.14:49:48 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug ==>  Preparing: select * from employee where uid=? 
+2020-03-02.14:49:48 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug ==> Parameters: 1004(Integer)
+2020-03-02.14:49:48 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug <==      Total: 1
+2020-03-02.14:49:50 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==>  Preparing: select * from department 
+2020-03-02.14:49:50 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==> Parameters: 
+2020-03-02.14:49:50 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug <==      Total: 11
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1002(Integer)
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1001(Integer)
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1010(Integer)
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1011(Integer)
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1012(Integer)
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1013(Integer)
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1014(Integer)
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1015(Integer)
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1016(Integer)
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1003(Integer)
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==>  Preparing: select * from employee where eid=? 
+2020-03-02.14:49:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug ==> Parameters: 1005(Integer)
+2020-03-02.14:49:51 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByEid 159 debug <==      Total: 1
+2020-03-02.14:52:14 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-03-02.14:52:14 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 鐜嬩簲(String)
+2020-03-02.14:52:14 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-03-02.14:52:14 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug ==>  Preparing: select * from employee where uid=? 
+2020-03-02.14:52:14 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug ==> Parameters: 1004(Integer)
+2020-03-02.14:52:14 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug <==      Total: 1
+2020-03-02.14:52:14 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==>  Preparing: select * from department 
+2020-03-02.14:52:14 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug ==> Parameters: 
+2020-03-02.14:52:15 [DEBUG] c.g.suaofeng.mapper.DepartmentMapper.getDeps 159 debug <==      Total: 11
+2020-03-02.14:57:50 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==>  Preparing: select * from bysj_user where username=? 
+2020-03-02.14:57:50 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug ==> Parameters: 鐜嬩簲(String)
+2020-03-02.14:57:50 [DEBUG] c.g.suaofeng.mapper.UserMapper.getUserByName 159 debug <==      Total: 1
+2020-03-02.14:57:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug ==>  Preparing: select * from employee where uid=? 
+2020-03-02.14:57:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug ==> Parameters: 1004(Integer)
+2020-03-02.14:57:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByUid 159 debug <==      Total: 1
+2020-03-02.14:57:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByDid 159 debug ==>  Preparing: select eid,ename,email,phone,intime from employee where departmentid=? 
+2020-03-02.14:57:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByDid 159 debug ==> Parameters: 1001(Integer)
+2020-03-02.14:57:50 [DEBUG] c.g.s.mapper.EmployeeMapper.getEmployeeByDid 159 debug <==      Total: 8
+2020-03-02.14:58:15 [DEBUG] c.g.suaofeng.mapper.EmployeeMapper.getEmployees 159 debug ==>  Preparing: select * from employee 
+2020-03-02.14:58:15 [DEBUG] c.g.suaofeng.mapper.EmployeeMapper.getEmployees 159 debug ==> Parameters: 
+2020-03-02.14:58:15 [DEBUG] c.g.suaofeng.mapper.EmployeeMapper.getEmployees 159 debug <==      Total: 16

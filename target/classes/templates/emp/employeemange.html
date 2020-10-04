@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- html5布局 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- 图标 -->
+    <link rel="icon" href="./favicon.ico" th:href="@{/static/favicon.ico}"  type="image/x-icon" />
+    <title>员工管理</title>
+    <link href="./css/mybootstrap.min.css" th:href="@{/static/css/mybootstrap.min.css}" rel="stylesheet">
+    <link href="css/mystyle.css" th:href="@{/static/css/mystyle.css}" rel="stylesheet">
+    <link href="css/pages.css" th:href="@{/static/css/pages.css}" rel="stylesheet">
+    <link href="css/default-dark.css" th:href="@{/static/css/default-dark.css}" id="theme" rel="stylesheet">
+
+</head>
+
+<body class="fix-header card-no-border fix-sidebar">
+<!-- Preloader - style you can find in spinners.css -->
+<div class="preloader">
+    <div class="loader">
+        <div class="loader__figure"></div>
+        <p class="loader__label">员工管理系统</p>
+    </div>
+</div>
+<!-- Main wrapper - style you can find in pages.scss -->
+<div id="main-wrapper">
+    <!-- 头部复用 -->
+    <div th:insert="~{home::topbar01}"></div>
+    <!-- 左侧任务栏复用  -->
+    <aside class="left-sidebar">
+        <div th:insert="~{home::leftbar01}"></div>
+    </aside>
+    <!-- Page wrapper  -->
+    <div class="page-wrapper">
+        <div class="container-fluid">
+            <div class="row page-titles">
+                <div class="col-md-5 align-self-center">
+                    <h3 class="text-themecolor">员工管理</h3>
+                </div>
+                <div class="col-md-7 align-self-center">
+                    <a href="#" class="btn waves-effect waves-light btn-danger pull-right hidden-sm-down">员工管理系统</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- column -->
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">员工表</h3>
+                            <h3 class="card-title"><a th:href="@{/emp/addpage}" class="btn btn-sm btn-success">添加员工</a></h3>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>员工编号</th>
+                                        <th>员工姓名</th>
+                                        <th>员工邮箱</th>
+                                        <th>员工手机</th>
+                                        <th>入职日期</th>
+                                        <th>删除员工</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr th:each="emp:${employees}">
+                                        <td th:text="${emp.eid}"></td>
+                                        <td th:text="${emp.ename}"></td>
+                                        <td th:text="${emp.email}"></td>
+                                        <td th:text="${emp.phone}"></td>
+                                        <td th:text="${#dates.format(emp.intime,'yyyy-MM-dd') }"></td>
+                                        <td >
+                                            <!--                                                <button class="btn btn-sm btn-primary ">编辑</button>-->
+                                            <form  th:action="@{/emp/}+${emp.eid}" method="post" >
+                                                <input type="hidden" value="delete" name="_method">
+                                                <button  type="submit" class="btn btn-sm btn-danger ">删除</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End PAge Content -->
+        </div>
+        <!-- footer -->
+        <footer class="footer">苏傲枫@毕业设计 </footer>
+        <!-- End footer -->
+    </div>
+    <!-- End Page wrapper  -->
+</div>
+<!-- End Wrapper -->
+<!-- All Jquery -->
+<script src="jquery/myjquery.min.js" th:src="@{/static/jquery/myjquery.min.js}"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="js/mypopper.min.js" th:src="@{/static/js/mypoper.min.js}"></script>
+<script src="js/mybootstrap.min.js" th:src="@{/static/js/mybootstrap.min.js}"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="js/perfect-scrollbar.jquery.min.js" th:src="@{/static/js/perfect-scrollbar.jquery.min.js}"></script>
+<!--Wave Effects -->
+<script src="js/waves.js" th:src="@{/static/js/waves.js}"></script>
+<!--Menu sidebar -->
+<script src="js/sidebarmenu.js" th:src="@{/static/js/sidebarmenu.js}"></script>
+<!--Custom JavaScript -->
+<script src="js/custom.min.js" th:src="@{/static/js/custom.min.js}"></script>
+
+</body>
+
+</html>

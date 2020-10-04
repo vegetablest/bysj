@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Kodinger">
+	<title>注册页面 &mdash; 毕业设计</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" th:href="@{/static/bootstrap/css/bootstrap.min.css}">
+	<link rel="stylesheet" type="text/css" href="css/my-login.css" th:href="@{/static/css/my-login.css}">
+	<link rel="icon" href="./favicon.ico" th:href="@{/static/favicon.ico}"  type="image/x-icon" />
+</head>
+
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+						<img src="img/logo.jpg" th:src="@{/static/img/logo.jpg}">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">注册</h4>
+							<form th:action="@{/user/adduser}" method="POST" >
+
+								<div class="form-group">
+									<label for="name">用户名</label>
+									<input id="name" type="text" class="form-control" name="username" required autofocus>
+								</div>
+
+								<div class="form-group">
+									<label for="password">密码</label>
+									<input id="password" type="password" class="form-control" name="password" required
+										data-eye>
+								</div>
+
+								<div class="form-group">
+									<label>
+										<input type="checkbox" name="aggree" value="1"> 我同意遵守公司规章制度
+									</label>
+								</div>
+
+								<div class="form-group no-margin">
+									<p style="color: red" th:text="${mes}" th:if="${not #strings.isEmpty(mes)}"/>
+									<button type="submit" class="btn btn-primary btn-block">
+										注册
+									</button>
+								</div>
+								<div class="margin-top20 text-center">
+									已经有帐号了？ <a href="index.html" th:href="@{/user/index}">登录</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="footer">
+						苏傲枫 @ 毕业设计
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js" th:src="@{/static/js/jquery.min.js}"></script>
+	<script src="bootstrap/js/bootstrap.min.js" th:src="@{/static/bootstrap/js/bootstrap.min.js}"></script>
+	<script src="js/my-login.js" th:src="@{/static/js/my-login.js}"></script>
+</body>
+
+</html>

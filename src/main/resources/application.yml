@@ -2,11 +2,10 @@ spring:
   #开发时关闭页面缓存,不然无法看到实时页面
   thymeleaf:
     cache: false
-
   #配置Druid数据源
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://47.105.208.63:3306/graduationproject
+    url: jdbc:mysql://47.105.208.63:3306/graduationproject?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -39,72 +38,29 @@ spring:
         reset-enable: true
         login-username: admin
         login-password: 123
-
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+#配置外部访问文件（把上传的图片视频文件放到E盘下的fileUpload文件夹下）
+#最大文件大小。值可以使用后缀“MB”或“KB”。指示兆字节或千字节大小。
+#最大请求大小可以是mb也可以是kb
+  servlet:
+    multipart:
+      max-file-size: 4MB
+      max-request-size: 100MB
 #MyBatis配置
 mybatis:
   config-location: classpath:mybatis/mybatis-config.xml #核心配置文件
   mapper-locations: classpath:mybatis/mapper/*.xml   #配置Mapper.xml文件所在路径
   type-aliases-package: com.graduationproject.suaofeng.entities   #配置别名
-
+#配置外部访问文件（把上传的图片视频文件放到E盘下的fileUpload文件夹下）
+#最大文件大小。值可以使用后缀“MB”或“KB”。指示兆字节或千字节大小。
+# 最大请求大小可以是mb也可以是kb
 #日志配置
-logging:
-  config: classpath:log/logback-spring.xml
-#spring:
-#  #禁用模板引擎
-#  thymeleaf:
-#    cache: false
-#  #修改日期格式化方式
-#  mvc:
-#    date-format: yyyy-MM-dd
-#  datasource:
-#    druid:
-#      #spring某个版本之后需要加上这句，否则不会自动执行sql文件
-#      #initialization-mode: always
-#      username: root
-#      password: 123456
-#      driver-class-name: com.mysql.jdbc.Driver
-#      #?useUnicode=true&characterEncoding=utf8&useSSL=false
-#      url: jdbc:mysql://47.105.208.63:3306/graduationproject
-#      #druid数据源
-#      type: com.alibaba.druid.pool.DruidDataSource
-#      platform: mysql
-#      #下面这些在spring boot的datasource配置类中没有，因此要自己写配置类导入
-#      #@configuration@bean@configuratinproperties(prefix="")
-#      # 初始化大小，最小，最大
-#      initialSize: 5
-#      minIdle: 3
-#      maxActive: 20
-#      # 配置获取连接等待超时的时间
-#      maxWait: 60000
-#      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
-#      timeBetweenEvictionRunsMillis: 60000
-#      # 配置一个连接在池中最小生存的时间，单位是毫秒
-#      minEvictableIdleTimeMillis: 30000
-#      validationQuery: select 'x'
-#      #空闲时是否进行连接测试
-#      testWhileIdle: true
-#      #从连接池借用连接时是否测试该连接
-#      testOnBorrow: false
-#      #归还时是否测试连接
-#      testOnReturn: false
-#      # 打开PSCache，并且指定每个连接上PSCache的大小
-#      poolPreparedStatements: true
-#      maxPoolPreparedStatementPerConnectionSize: 20
-#      #配置监控拦截的过滤器
-#      filters: stat,wall,slf4j
-#      #  通过connectProperties属性来打开mergeSql功能；慢SQL记录
-#      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
-# #    schema:
-# #      - classpath: sql/department.sql
-# #      - classpath: sql/employee.sql
-#mybatis:
-#  config-location: classpath:mybatis/mybatis-config.xml
-#  mapper-locations: classpath:mybatis/mapper/*.xml
-#  type-aliases-package: com.graduationproject.suaofeng.entities
-#
-##端口
-#server:
-#  port: 8080
-#  #访问路径
-#  servlet:
+#logging:
+#  config: classpath:log/logback-spring.xml
+server:
+  port: 8081
 #    context-path: /graduationproject
+#yml

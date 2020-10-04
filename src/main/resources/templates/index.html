@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Kodinger">
+	<title>登录页 &mdash; 毕业设计</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" th:href="@{/static/bootstrap/css/bootstrap.min.css}">
+	<link rel="stylesheet" type="text/css" href="css/my-login.css" th:href="@{/static/css/my-login.css}">
+	<link rel="icon" href="./favicon.ico" th:href="@{/static/favicon.ico}" type="image/x-icon" />
+
+</head>
+
+<body class="my-login-page">
+<section class="h-100">
+	<div class="container h-100">
+		<div class="row justify-content-md-center h-100">
+			<div class="card-wrapper">
+				<div class="brand">
+					<img src="img/logo.jpg" th:src="@{/static/img/logo.jpg}">
+				</div>
+				<div class="card fat">
+					<div class="card-body">
+						<h4 class="card-title">登录</h4>
+						<form th:action="@{/user/login}" method="POST">
+							<div class="form-group">
+								<label for="email">用户名</label>
+								<input id="email" type="text" class="form-control" name="username" value="" required
+									   autofocus>
+							</div>
+							<div class="form-group">
+								<label for="password">密码
+									<a href="forgot.html" class="float-right" th:href="@{/user/forgot}">
+										忘记密码?
+									</a>
+								</label>
+								<input id="password" type="password" class="form-control" name="password" required
+									   data-eye>
+							</div>
+							<div class="form-group">
+								<label id="verifycode">验证码</label>
+								<input type="text" id="verify-code" name="verifycode" style="width: 60%;"  placeholder="" required="required">
+								<a href="javascript:location=location.href;"><img  id="verifyimg" style="margin-bottom: 5px;" th:src="@{/user/getVerifyCode}"></a>
+								<!--οnclick="javascript:getvCode()"-->
+							</div>
+
+							<div class="form-group">
+								<label>
+									<input type="checkbox" name="remember"> 记住密码
+								</label>
+							</div>
+							<div class="form-group no-margin">
+								<p style="color: red" th:text="${mes}" th:if="${not #strings.isEmpty(mes)}"/>
+								<button type="submit" class="btn btn-primary btn-block">
+									登录
+								</button>
+							</div>
+							<div class="margin-top20 text-center">
+								还没有账号? <a href="register.html" th:href="@{/user/register}">创建一个？</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="footer">
+					苏傲枫 @ 毕业设计
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="js/jquery.min.js" th:src="@{/static/js/jquery.min.js}"></script>
+<script src="bootstrap/js/bootstrap.min.js" th:src="@{/static/bootstrap/js/bootstrap.min.js}"></script>
+<script src="js/my-login.js" th:src="@{/static/js/my-login.js}"></script>
+<script type="text/javascript">
+	// getvCode();
+	/**
+	 * 获取验证码
+	 * 将验证码写到login.html页面的id = verifyimg 的地方
+	 */
+	// function getvCode() {
+	// 	document.getElementById("verifyimg").src = timestamp("http://localhost:8081/user/getVerifyCode");
+	// }
+	// //为url添加时间戳
+	// function timestamp(url) {
+	// 	var getTimestamp = new Date().getTime();
+	// 	if (url.indexOf("?") > -1) {
+	// 		url = url + "&timestamp=" + getTimestamp
+	// 	} else {
+	// 		url = url + "?timestamp=" + getTimestamp
+	// 	}
+	// 	return url;
+	// };
+
+</script>
+</body>
+
+</html>

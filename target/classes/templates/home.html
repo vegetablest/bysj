@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- html5布局 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- 图标 -->
+    <link rel="icon" href="./favicon.ico" th:href="@{/static/favicon.ico}"  type="image/x-icon" />
+    <title>主页</title>
+    <!-- bootstrap的核心Css -->
+    <link href="./css/mybootstrap.min.css" th:href="@{/static/css/mybootstrap.min.css}" rel="stylesheet">
+    <!-- chartist CSS -->
+    <link href="./css/mychartist.min.css" th:href="@{/static/css/mychartist.min.css}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/mystyle.css" th:href="@{/static/css/mystyle.css}" rel="stylesheet">
+    <!-- Dashboard 1 Page CSS -->
+    <link href="css/pages/dashboard.css" th:href="@{/static/css/pages.css}" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/default-dark.css" th:href="@{/static/css/default-dark.css}" id="theme" rel="stylesheet">
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">人员管理系统</p>
+        </div>
+    </div>
+
+    <div id="main-wrapper">
+        <!-- 头部 -->
+        <header class="topbar" th:fragment="topbar01">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- Logo -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="home.html" th:href="@{/user/homepage}">
+                        <!-- Logo icon --><b>
+                            <img src="/img/logo-icon.png" alt="homepage" class="dark-logo" />
+                        </b>
+                        <span>
+                            <img src="/img/logo-text.png" alt="homepage" class="dark-logo" />
+                        </span>
+                    </a>
+                </div>
+                <!-- 头像，搜索框 -->
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                    </ul>
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item hidden-xs-down search-box"> <a
+                                class="nav-link hidden-sm-down waves-effect waves-dark" href="javascript:void(0)"><i
+                                    class="ti-search"></i></a>
+                            <form class="app-search" th:action="@{/emp/selemp}" method="post">
+                                <input type="text" name="name" class="form-control" value="" placeholder="EmployeeName & Search & enter">
+                                <a class="srh-btn"><i class="ti-close"></i></a>
+                            </form>
+                        </li>
+                        <!-- 头像 -->
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-dark" href="#"><img src="/img/users/1.jpg"
+                             th:src="@{'/file/'+${session.avatar}}"       alt="user" class="profile-pic" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- 左侧固定 -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar" th:fragment="leftbar01">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li> <a class="waves-effect waves-dark" href="home.html" th:href="@{/user/homepage}" aria-expanded="false"><i
+                                    class="mdi mdi-gauge"></i><span class="hide-menu">主页</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="performance.html" th:href="@{/user/homepage}" aria-expanded="false"><i
+                                class="mdi mdi-emoticon"></i><span class="hide-menu">欢迎您：[[${session.loginUser}]]</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="information.html" th:href="@{/user/selectme}" aria-expanded="false"><i
+                                    class="mdi mdi-account-check"></i><span class="hide-menu">个人信息</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="employee.html" th:href="@{/emp/getemps}" aria-expanded="false"><i
+                                    class="mdi mdi-table"></i><span class="hide-menu">同部门人员</span></a></li>
+                        <li th:if="${not #strings.isEmpty(session.admin)}"> <a class="waves-effect waves-dark" href="performance.html" th:href="@{/employee/manage}" aria-expanded="false"><i
+                                class="mdi mdi-emoticon"></i><span class="hide-menu">员工管理</span></a></li>
+                        <li th:if="${not #strings.isEmpty(session.admin)}"> <a class="waves-effect waves-dark" href="department.html" th:href="@{/department/getdeps}" aria-expanded="false"><i
+                                    class="mdi mdi-earth"></i><span class="hide-menu">部门管理</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="modify.html" th:href="@{/emp/avatar}" aria-expanded="false"><i
+                                    class="mdi mdi-book-open-variant"></i><span class="hide-menu">上传头像</span></a></li>
+                        <li th:if="${not #strings.isEmpty(session.admin)}"> <a class="waves-effect waves-dark" href="performance.html" th:href="@{/user/selectuser}" aria-expanded="false"><i
+                                class="mdi mdi-emoticon"></i><span class="hide-menu">系统用户</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="pages-error-404.html" th:href="@{/err/404}" aria-expanded="false"><i
+                                    class="mdi mdi-help-circle"></i><span class="hide-menu">404</span></a></li>
+                    </ul>
+                    <div class="text-center m-t-30">
+                        <a href="#" th:href="@{/user/logout}" class="btn waves-effect waves-light btn-info hidden-md-down">注销登录</a>
+                    </div>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- 右侧大块 -->
+        <div class="page-wrapper">
+            <div class="container-fluid">
+                <!-- 上边栏  -->
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor">主页</h3>
+                    </div>
+                    <div class="col-md-7 align-self-center">
+                        <a href="#" class="btn waves-effect waves-light btn-danger pull-right hidden-sm-down"> 管理系统</a>
+                    </div>
+                </div>
+                <!-- 间隙 -->
+                <div class="row">
+                </div>
+                <!-- 部门总览 -->
+                <div class="row">
+                    <!-- 部门表 -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div>
+                                        <h4 class="card-title"><span class="lstick"></span>公司部门</h4>
+                                    </div>
+                                </div>
+                                <div class="table-responsive m-t-20">
+                                    <table class="table vm no-th-brd no-wrap pro-of-month">
+                                        <thead>
+                                            <tr>
+                                                <th>部门编号</th>
+                                                <th>部门名称</th>
+                                                <th>创建日期</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr th:each="dep:${deps}">
+                                                <td th:text="${dep.did}"></td>
+                                                <td th:text="${dep.dname}"></td>
+                                                <td th:text="${#dates.format(dep.createtime,'yyyy-MM-dd') }"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 领导表 -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div>
+                                        <h4 class="card-title"><span class="lstick"></span>部门领导联系方式</h4>
+                                    </div>
+                                </div>
+                                <div class="table-responsive m-t-20">
+                                    <table class="table vm no-th-brd no-wrap pro-of-month">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">组长</th>
+                                                <th>Email</th>
+                                                <th>联系电话</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr th:each="leader:${leaders}">
+                                                <td style="width:50px;"><span class="round"><img
+                                                        src="/img/users/1.jpg" th:src="@{'/file/'+${leader.avatar}}" alt="user"
+                                                        width="50"></span></td>
+                                                <td>
+                                                    <h6 th:text="${leader.ename}"></h6><small th:text="${leader.eid}" class="text-muted"></small>
+                                                </td>
+                                                <td th:text="${leader.email}"></td>
+                                                <td th:text="${leader.phone}"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 右侧页脚 -->
+            <footer class="footer">苏傲枫@毕业设计</footer>
+            <!-- End footer -->
+        </div>
+        <!-- End Page wrapper  -->
+    </div>
+
+    <!-- End Wrapper -->
+    <!-- All Jquery -->
+    <script src="jquery/myjquery.min.js" th:src="@{/static/jquery/myjquery.min.js}"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="js/mypopper.min.js" th:src="@{/static/js/mypoper.min.js}"></script>
+    <script src="js/mybootstrap.min.js" th:src="@{/static/js/mybootstrap.min.js}"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/perfect-scrollbar.jquery.min.js" th:src="@{/static/js/perfect-scrollbar.jquery.min.js}"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js" th:src="@{/static/js/waves.js}"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js" th:src="@{/static/js/sidebarmenu.js}"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js" th:src="@{/static/js/custom.min.js}"></script>
+</body>
+
+</html>

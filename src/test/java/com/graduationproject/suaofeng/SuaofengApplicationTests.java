@@ -24,4 +24,21 @@ class SuaofengApplicationTests {
             System.out.println(user);
         }
     }
+    @Test
+    void test() {
+        User user = userService.getUser("张三","123456");
+        System.out.println(user);
+    }
+    @Test
+    void test02() {
+        User user = userService.getUserByName("张三");
+        System.out.println(user);
+    }
+    @Test
+    void test01() {
+        User user = new User();
+        user.setUsername("李四");
+        user.setPassword("123456");
+        userService.addUser(user);
+    }
 }
